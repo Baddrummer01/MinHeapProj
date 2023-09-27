@@ -1,0 +1,33 @@
+#pragma once
+
+#include <vector>
+
+using namespace std;
+
+//This class defines a heap where each node has a
+//less or equal value than all child nodes (min-heap)
+//Implemented using a vector of integers representing the
+//values at each node of a complete binary tree
+//Do not modify anything in the class definition
+
+class minHeap
+{
+    private:
+        vector<int> heap;
+        //Implement the following functions that maintain the heap property
+        void siftUp(int pos);
+
+        void siftDown(int pos);
+
+    public:
+        minHeap() {} //Default constructor, heap is initiallay an empty vector
+        vector<int> getHeap() {return heap;} //Returns heap data for test cases
+        //Implement all the following functions
+
+        //Should build the heap from bottom-up
+        minHeap(vector<int> data);
+        //Insert value into heap
+        void insert(int value);
+        //Removes minimum value
+        int removeMin();
+};
