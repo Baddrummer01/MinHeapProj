@@ -1,8 +1,3 @@
-//Name: Bennett Starks
-//Date Submitted: 04/16/2023
-//Lab Section: 002
-//Assignment Name: Min-Heap Implementation Using a Vector 
-
 #include <vector>
 #include "minHeap.h"
 
